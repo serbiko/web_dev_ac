@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Títulos do Botafogo</title>
+    <meta name="description" content="Página sobre os títulos do Botafogo">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Títulos do Botafogo</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="lista-titulos">Lista de Títulos</h2>
+            <ul>
+                <li>Campeonato Carioca</li>
+                <li>Campeonato Brasileiro</li>
+                <li>Copa Conmebol</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Títulos em Ordem Cronológica</h2>
+            <ol>
+                <li>Campeonato Carioca 1910</li>
+                <li>Campeonato Carioca 1912</li>
+                <li>Campeonato Brasileiro 1968</li>
+                <li>Copa Conmebol 1993</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Sobre o Botafogo</h2>
+            <p>O Botafogo de Futebol e Regatas é uma agremiação poliesportiva com sede na cidade do Rio de Janeiro, Brasil.</p>
+            <p>Fundado em 1904, é um dos clubes mais tradicionais do futebol brasileiro.</p>
+            <p><span class="highlight">O Botafogo tem uma rica história de conquistas.</span></p>
+        </section>
+
+        <section>
+            <h2>Seções de Títulos</h2>
+            <div id="titulos-estaduais">
+                <h3>Títulos Estaduais</h3>
+                <p>Campeonato Carioca, Taça Guanabara, Taça Rio</p>
+            </div>
+            <div id="titulos-nacionais">
+                <h3>Títulos Nacionais</h3>
+                <p>Campeonato Brasileiro, Copa do Brasil</p>
+            </div>
+            <div id="titulos-internacionais">
+                <h3>Títulos Internacionais</h3>
+                <p>Copa Conmebol</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Adicionar um Título</h2>
+            <form method="GET" action="/submit-get">
+                <label for="titulo-get">Título (GET):</label>
+                <input type="text" id="titulo-get" name="titulo-get">
+                <button type="submit">Enviar GET</button>
+            </form>
+            
+            <form method="POST" action="/submit-post">
+                <label for="titulo-post">Título (POST):</label>
+                <input type="text" id="titulo-post" name="titulo-post">
+                <button type="submit">Enviar POST</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Links</h2>
+            <p><a href="#lista-titulos">Ir para Lista de Títulos</a></p>
+            <p><a href="https://www.botafogo.com.br" target="_blank">Site Oficial do Botafogo</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Títulos do Botafogo</p>
+    </footer>
+</body>
+</html>
